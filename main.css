@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+
+html,
+body {
+	background-color: rgb(235, 222, 106);
+	color: #505050;
+	font-size: 10px;
+
+	font-family: 'Montserrat', sans-serif;
+}
+
+.list-items {
+	list-style: none;
+}
+
+.input-elm {
+	margin-top: 1em;
+	width: 100%;
+	height: 2em;
+	background-color: transparent;
+	border-bottom: 0.1em dotted #ffffff;
+	font-size: 1.1em;
+}
+
+.input-radio,
+.input-checkbox {
+	margin-top: 0.55em;
+	margin-bottom: 0.55em;
+	width: 2em;
+	height: 1.15em;
+	vertical-align: middle;
+}
+
+.select-elm {
+	margin-top: 1em;
+	width: 100%;
+	background-color: transparent;
+	font-size: 1.1em;
+	color: #faeeee;
+	border-bottom: 0.1em dotted #8c5454;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+}
+
+.textarea-elm {
+	margin-top: 1em;
+	width: 100%;
+	height: 9em;
+	font-size: 1.1em;
+	background-color: transparent;
+	border: 0.1em dotted #ffffff;
+}
+
+.button-elm {
+	margin: auto;
+	margin-top: 5.75em;
+	width: 100%;
+	height: 2.75em;
+	font-size: 1.1em;
+	border-radius: 0.3em;
+	color: #505050;
+	display: block;
+}
+
+#title {
+	margin-top: 0.5em;
+	text-align: center;
+	font-size: 4em;
+}
+
+#description {
+	margin-top: 2.75em;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+.desc-foot {
+	text-align: right;
+	font-size: 0.65em;
+}
+
+#survey-form {
+	margin: auto;
+	margin-top: 2.55em;
+	margin-bottom: 2.55em;
+	padding: 0 1.75em;
+	max-width: 35em;
+	font-size: 1.55em;
+}
+
+#survey-form div {
+	margin-top: 3.75em;
+}

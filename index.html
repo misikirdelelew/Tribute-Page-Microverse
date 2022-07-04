@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Survey Form For Feedback</title>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<h1 id="title">Survey Form Feedback</h1>
+	<p id="description">Please fill this form<sup>*</sup> to let us know how we can improve We Developed This Form <span
+			class="desc-foot"><sub><sup>*</sup>You can fill and submit this form<sub></span></p>
+	<form method="POST" action="https://formspree.io/onlinemisikir@gmail.com" id="survey-form">
+		<div>
+			<label for="name" id="name-label">Name:</label><br>
+			<input class="input-elm" type="text" name="name" id="name" required placeholder="Your Full Name">
+		</div>
+		<div>
+			<label for="email" id="email-label">Email:</label><br>
+			<input class="input-elm" type="email" name="email" id="email" required placeholder="Your Email ID">
+		</div>
+		<div>
+			<label for="number" id="number-label">Age:</label><br>
+			<input class="input-elm" type="number" name="age" id="number" max="40" min="18" placeholder="Your Age">
+		</div>
+		<div>
+			<label for="dropdown">Which one of these best describes your occupation?</label><br>
+			<select class="select-elm" name="occupation" id="dropdown">
+				<option value="full_time_job">Full-Time</option>
+				<option value="part_time_job">Part-time Job</option>
+				<option value="freelancer">Freelancer</option>
+				<option value="teacher">Teacher</option>
+				<option value="student">Student</option>
+				<option value="no_say">Prefer not to say</option>
+			</select>
+		</div>
+		<div>
+			<div>How likely are you to suggest freeCodeCamp to somebody?</div>
+			<ul>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="1"
+						id="radio-1"> <label for="radio-1">Extremely likely</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="2"
+						id="radio-2"> <label for="radio-2">Very likely</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="3"
+						id="radio-3"> <label for="radio-3">Likely</label></li>
+				<li class="list-items"><input class="input-elm input-radio" type="radio" name="likely" value="4"
+						id="radio-4"> <label for="radio-4">Unlikely</label></li>
+			</ul>
+		</div>
+		<div>
+			<div>What improvements would you like?</div>
+			<ul>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements"
+						value="html5" id="checkbox-1"> <label for="checkbox-1">More HTML5 Tasks</label></li>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements"
+						value="css3" id="checkbox-2"> <label for="checkbox-2">More CSS3 Challenges</label></li>
+				<li class="list-items"><input class="input-elm input-checkbox" type="checkbox" name="improvements"
+						value="js" id="checkbox-3"> <label for="checkbox-1">More JavaScript Challenges</label></li>
+			</ul>
+		</div>
+		<div>
+			<label for="more-improvements">List out all improvement you want to see</label>
+			<textarea class="textarea-elm" name="improvements-list" id="more-improvements" maxlength="300"></textarea>
+		</div>
+		<button class="button-elm" type="submit" id="submit">Submit</button>
+	</form>
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
